@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Government Lower Primary School H.Vasthi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="kids-bg" aria-hidden="true">
+      <div class="blob red"></div>
+      <div class="blob green"></div>
+      <div class="blob blue"></div>
+    </div>
+
+    <header class="hero">
+      <img src="assets/school.jpeg" alt="School photo" class="hero-image" />
+      <h1 class="school-name">ಸರ್ಕಾರಿ ಕನ್ನಡ ಕಿರಿಯ ಪ್ರಾಥಮಿಕ  ಶಾಲೆ ಹ.ಹಟ್ಟಿ ಬೆನಕನಹಳ್ಳಿ</h1>
+      <h2 class="school-name" id="tq"><pre>ತಾಲೂಕ - ಇಂಡಿ                ಜಿಲ್ಲಾ - ವಿಜಯಪುರ.</pre></h2>
+      <div class="bunting" aria-hidden="true"></div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar left">
+        <a class="nav-btn" href="pages/tab1.html">Button 1</a>
+        <a class="nav-btn" href="pages/tab2.html">Button 2</a>
+        <a class="nav-btn" href="pages/tab3.html">Button 3</a>
+        <a class="nav-btn" href="pages/tab4.html">Button 4</a>
+        <a class="nav-btn" href="pages/tab5.html">Button 5</a>
+        <a class="nav-btn" href="pages/tab6.html">Button 6</a>
+      </aside>
+
+      <section class="content">
+        <section id="events" class="card">
+          <div class="card-header">
+            <h2>School Events</h2>
+            <div class="actions">
+              <button id="edit-toggle" class="secondary">Edit events</button>
+            </div>
+          </div>
+          <ul id="event-list" class="event-list"></ul>
+          <form id="event-form" class="event-form hidden" autocomplete="off">
+            <input id="event-input" type="text" placeholder="Add a new event" required />
+            <button type="submit" class="primary">Add</button>
+          </form>
+        </section>
+
+        <section id="gallery" class="card">
+          <div class="card-header">
+            <h2>Photo Gallery</h2>
+            <div class="actions">
+              <button id="gallery-edit-toggle" class="secondary">Manage</button>
+            </div>
+          </div>
+          <div id="gallery-grid" class="gallery-grid"></div>
+          <form id="gallery-form" class="gallery-form hidden" autocomplete="off">
+            <input id="gallery-url" type="url" placeholder="Paste image URL (optional)" />
+            <span>or</span>
+            <input id="gallery-file" type="file" accept="image/*" />
+            <button type="submit" class="primary">Add Photo</button>
+          </form>
+        </section>
+      </section>
+
+      <aside class="sidebar right">
+        <a class="nav-btn" href="pages/tab7.html">Button 7</a>
+        <a class="nav-btn" href="pages/tab8.html">Button 8</a>
+        <a class="nav-btn" href="pages/tab9.html">Button 9</a>
+        <a class="nav-btn" href="pages/tab10.html">Button 10</a>
+        <a class="nav-btn" href="pages/tab11.html">Button 11</a>
+        <a class="nav-btn" href="pages/tab12.html">Button 12</a>
+      </aside>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> GLPS H.Vasthi</footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
